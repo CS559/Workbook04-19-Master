@@ -52,6 +52,15 @@ class Boid {
      * @param {Array<Boid>} flock 
      */
     steer(flock) {
+		/*
+		// Note - this sample behavior is just to help you understand
+		// what a steering function might  do
+		// all this one does is have things go in circles, rather than
+		// straight lines
+		// Something this simple would not count for the bonus points:
+		// a "real" steering behavior must consider other boids,
+		// or at least obstacles.
+		
         // a simple steering behavior: 
         // create a rotation matrix that turns by a small amount
         // 2 degrees per time step
@@ -64,6 +73,7 @@ class Boid {
 
         this.vx =  ovx * c + ovy * s;
         this.vy = -ovx * s + ovy * c;
+		*/
     }
 }
 
