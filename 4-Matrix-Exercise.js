@@ -158,26 +158,6 @@ function drawBox3(context) {
 function shearX(context,s) {
 }
 
-/** simple example answers - don't give to students */
-function twoDotsMG(context,x1,y1,x2,y2) {
-   context.translate(x1,y1);
-   let dx = x2-x1;
-   let dy = y2-y1;
-   let d = Math.sqrt(dx*dx + dy*dy) / 10.0 / Math.SQRT2;
-   context.scale(d,d);
-   let a = Math.atan2(dy,dx) - Math.PI/4;
-   context.rotate(a);
-}
-function twoDots0MG(context,x1,y1,x2,y2) {
-   context.translate(x1,y1);
-   let dx = x2-x1;
-   let dy = y2-y1;
-   let d = Math.sqrt(dx*dx + dy*dy) / 10.0;
-   context.scale(d,d);
-   let a = Math.atan2(dy,dx);
-   context.rotate(a);
-}
-
 /** Utility function: draw a 10x10 square with markings so we know which
  * way is x and which way is Y
  * don't use rect drawing - since it doesn't always transform correctly
